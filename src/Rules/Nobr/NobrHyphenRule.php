@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Nobr;
+namespace zoibana\Typograph\Rules\Nobr;
 
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
-use App\Helpers\Typograph\RuleInterface;
+use zoibana\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
 
 class NobrHyphenRule extends AbstractBaseRule implements RuleInterface
 {

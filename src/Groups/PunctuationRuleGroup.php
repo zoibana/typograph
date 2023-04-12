@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationAutoCommaRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationBaseLimitRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationBracketsRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationBracketsSpaceRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationFixExclMarkRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationHellipRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationMarksLimitRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationMultipleRule;
-use App\Helpers\Typograph\Rules\Punctuation\PunctuationPeriodAtEndRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Punctuation\PunctuationAutoCommaRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationBaseLimitRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationBracketsRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationBracketsSpaceRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationFixExclMarkRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationHellipRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationMarksLimitRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationMultipleRule;
+use zoibana\Typograph\Rules\Punctuation\PunctuationPeriodAtEndRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class PunctuationRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

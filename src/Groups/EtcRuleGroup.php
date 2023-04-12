@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Etc\EtcAcuteAccentRule;
-use App\Helpers\Typograph\Rules\Etc\EtcCenturyPeriodRule;
-use App\Helpers\Typograph\Rules\Etc\EtcExpandNoNbspInNobrRule;
-use App\Helpers\Typograph\Rules\Etc\EtcNobrToNbspRule;
-use App\Helpers\Typograph\Rules\Etc\EtcSplitNumberToTriadsAccentRule;
-use App\Helpers\Typograph\Rules\Etc\EtcTimeIntervalRule;
-use App\Helpers\Typograph\Rules\Etc\EtcWordSupRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Etc\EtcAcuteAccentRule;
+use zoibana\Typograph\Rules\Etc\EtcCenturyPeriodRule;
+use zoibana\Typograph\Rules\Etc\EtcExpandNoNbspInNobrRule;
+use zoibana\Typograph\Rules\Etc\EtcNobrToNbspRule;
+use zoibana\Typograph\Rules\Etc\EtcSplitNumberToTriadsAccentRule;
+use zoibana\Typograph\Rules\Etc\EtcTimeIntervalRule;
+use zoibana\Typograph\Rules\Etc\EtcWordSupRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class EtcRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

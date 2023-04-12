@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Symbols;
+namespace zoibana\Typograph\Rules\Symbols;
 
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
-use App\Helpers\Typograph\RuleInterface;
+use zoibana\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
 
 class SymbolsEuroRule extends AbstractBaseRule implements RuleInterface
 {

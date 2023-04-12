@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
 abstract class AbstractRuleGroup
 {

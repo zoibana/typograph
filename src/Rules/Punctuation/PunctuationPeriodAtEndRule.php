@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Punctuation;
+namespace zoibana\Typograph\Rules\Punctuation;
 
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
-use App\Helpers\Typograph\RuleInterface;
+use zoibana\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
 
 class PunctuationPeriodAtEndRule extends AbstractBaseRule implements RuleInterface
 {

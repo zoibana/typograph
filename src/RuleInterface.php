@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\Typograph;
+namespace zoibana\Typograph;
 
 interface RuleInterface
 {

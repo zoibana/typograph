@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Helpers\Typograph;
+namespace zoibana\Typograph;
 
-use App\Helpers\Typograph\Groups\AbbrRuleGroup;
-use App\Helpers\Typograph\Groups\DashRuleGroup;
-use App\Helpers\Typograph\Groups\DateRuleGroup;
-use App\Helpers\Typograph\Groups\EtcRuleGroup;
-use App\Helpers\Typograph\Groups\NobrRuleGroup;
-use App\Helpers\Typograph\Groups\NumberRuleGroup;
-use App\Helpers\Typograph\Groups\OpticalAlignRuleGroup;
-use App\Helpers\Typograph\Groups\PunctuationRuleGroup;
-use App\Helpers\Typograph\Groups\QuoteRuleGroup;
-use App\Helpers\Typograph\Groups\SpaceRuleGroup;
-use App\Helpers\Typograph\Groups\SymbolsRuleGroup;
-use App\Helpers\Typograph\Groups\TextRuleGroup;
+use zoibana\Typograph\Groups\AbbrRuleGroup;
+use zoibana\Typograph\Groups\DashRuleGroup;
+use zoibana\Typograph\Groups\DateRuleGroup;
+use zoibana\Typograph\Groups\EtcRuleGroup;
+use zoibana\Typograph\Groups\NobrRuleGroup;
+use zoibana\Typograph\Groups\NumberRuleGroup;
+use zoibana\Typograph\Groups\OpticalAlignRuleGroup;
+use zoibana\Typograph\Groups\PunctuationRuleGroup;
+use zoibana\Typograph\Groups\QuoteRuleGroup;
+use zoibana\Typograph\Groups\SpaceRuleGroup;
+use zoibana\Typograph\Groups\SymbolsRuleGroup;
+use zoibana\Typograph\Groups\TextRuleGroup;
 use RuntimeException;
 
 /**
@@ -24,7 +24,7 @@ class Typograph
 {
 	private string $text = "";
 
-	/** @var \App\Helpers\Typograph\RuleGroupInterface[] */
+	/** @var \zoibana\Typograph\RuleGroupInterface[] */
 	protected array $traits = [];
 
 	protected array $safe_blocks = [];

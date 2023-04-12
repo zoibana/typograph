@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\OpticalAlign;
+namespace zoibana\Typograph\Rules\OpticalAlign;
 
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
-use App\Helpers\Typograph\RuleInterface;
+use zoibana\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
 
 class OpticalAlignQuoteExtraRule extends AbstractBaseRule implements RuleInterface
 {

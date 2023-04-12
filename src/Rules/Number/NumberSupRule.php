@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Number;
+namespace zoibana\Typograph\Rules\Number;
 
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
-use App\Helpers\Typograph\RuleInterface;
+use zoibana\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
 
 class NumberSupRule extends AbstractBaseRule implements RuleInterface
 {

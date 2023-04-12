@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Date\DateDaysIntervalRule;
-use App\Helpers\Typograph\Rules\Date\DateMonthsIntervalRule;
-use App\Helpers\Typograph\Rules\Date\DateNbspAfterYearRule;
-use App\Helpers\Typograph\Rules\Date\DateNoBrYearRule;
-use App\Helpers\Typograph\Rules\Date\DateSpaceAfterYearRule;
-use App\Helpers\Typograph\Rules\Date\DateYearsRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Date\DateDaysIntervalRule;
+use zoibana\Typograph\Rules\Date\DateMonthsIntervalRule;
+use zoibana\Typograph\Rules\Date\DateNbspAfterYearRule;
+use zoibana\Typograph\Rules\Date\DateNoBrYearRule;
+use zoibana\Typograph\Rules\Date\DateSpaceAfterYearRule;
+use zoibana\Typograph\Rules\Date\DateYearsRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class DateRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Text;
+namespace zoibana\Typograph\Rules\Text;
 
-use App\Helpers\Typograph\RuleInterface;
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
+use zoibana\Typograph\Rules\AbstractBaseRule;
 
 class TextAutoLinksRule extends AbstractBaseRule implements RuleInterface
 {

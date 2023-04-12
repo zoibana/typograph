@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Abbr\AbbrAcronymRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrBeforeUnitRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrBeforeWeightUnitRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrEtcRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrGostRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrLocationsRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrMoneyAbbrRevRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrMoneyAbbrRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrOrgRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrPsRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrSmImRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrTeRule;
-use App\Helpers\Typograph\Rules\Abbr\AbbrVoltUnitRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Abbr\AbbrAcronymRule;
+use zoibana\Typograph\Rules\Abbr\AbbrBeforeUnitRule;
+use zoibana\Typograph\Rules\Abbr\AbbrBeforeWeightUnitRule;
+use zoibana\Typograph\Rules\Abbr\AbbrEtcRule;
+use zoibana\Typograph\Rules\Abbr\AbbrGostRule;
+use zoibana\Typograph\Rules\Abbr\AbbrLocationsRule;
+use zoibana\Typograph\Rules\Abbr\AbbrMoneyAbbrRevRule;
+use zoibana\Typograph\Rules\Abbr\AbbrMoneyAbbrRule;
+use zoibana\Typograph\Rules\Abbr\AbbrOrgRule;
+use zoibana\Typograph\Rules\Abbr\AbbrPsRule;
+use zoibana\Typograph\Rules\Abbr\AbbrRule;
+use zoibana\Typograph\Rules\Abbr\AbbrSmImRule;
+use zoibana\Typograph\Rules\Abbr\AbbrTeRule;
+use zoibana\Typograph\Rules\Abbr\AbbrVoltUnitRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class AbbrRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

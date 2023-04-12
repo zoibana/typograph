@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules;
+namespace zoibana\Typograph\Rules;
 
-use App\Helpers\Typograph\EntitiesHelper;
+use zoibana\Typograph\EntitiesHelper;
 
 class AbstractBaseRule
 {

@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Space\Space2symAbbrRule;
-use App\Helpers\Typograph\Rules\Space\SpaceAfterCommaRule;
-use App\Helpers\Typograph\Rules\Space\SpaceAfterHellipRule;
-use App\Helpers\Typograph\Rules\Space\SpaceAfterHellipsRule;
-use App\Helpers\Typograph\Rules\Space\SpaceAfterPeriodRule;
-use App\Helpers\Typograph\Rules\Space\SpaceAfterPunctuationRule;
-use App\Helpers\Typograph\Rules\Space\SpaceAfterYearRule;
-use App\Helpers\Typograph\Rules\Space\SpaceAtEndRule;
-use App\Helpers\Typograph\Rules\Space\SpaceBeforeOpenQuoteRule;
-use App\Helpers\Typograph\Rules\Space\SpaceBeforePercentRule;
-use App\Helpers\Typograph\Rules\Space\SpaceMultipleSpacesRule;
-use App\Helpers\Typograph\Rules\Space\SpaceNoSpaceBeforePunctuationRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Space\Space2symAbbrRule;
+use zoibana\Typograph\Rules\Space\SpaceAfterCommaRule;
+use zoibana\Typograph\Rules\Space\SpaceAfterHellipRule;
+use zoibana\Typograph\Rules\Space\SpaceAfterHellipsRule;
+use zoibana\Typograph\Rules\Space\SpaceAfterPeriodRule;
+use zoibana\Typograph\Rules\Space\SpaceAfterPunctuationRule;
+use zoibana\Typograph\Rules\Space\SpaceAfterYearRule;
+use zoibana\Typograph\Rules\Space\SpaceAtEndRule;
+use zoibana\Typograph\Rules\Space\SpaceBeforeOpenQuoteRule;
+use zoibana\Typograph\Rules\Space\SpaceBeforePercentRule;
+use zoibana\Typograph\Rules\Space\SpaceMultipleSpacesRule;
+use zoibana\Typograph\Rules\Space\SpaceNoSpaceBeforePunctuationRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class SpaceRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

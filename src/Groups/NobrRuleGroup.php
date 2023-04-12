@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Nobr\NobrBeforeParticleRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrCelciusRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrHyphenRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrInitialsDotsRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrInitialsRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrIPRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrKaktoRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrNbspInTheEndRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrPhoneExtRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrPhoneRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrShortWordsRule;
-use App\Helpers\Typograph\Rules\Nobr\NobrSuperNbspRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Nobr\NobrBeforeParticleRule;
+use zoibana\Typograph\Rules\Nobr\NobrCelciusRule;
+use zoibana\Typograph\Rules\Nobr\NobrHyphenRule;
+use zoibana\Typograph\Rules\Nobr\NobrInitialsDotsRule;
+use zoibana\Typograph\Rules\Nobr\NobrInitialsRule;
+use zoibana\Typograph\Rules\Nobr\NobrIPRule;
+use zoibana\Typograph\Rules\Nobr\NobrKaktoRule;
+use zoibana\Typograph\Rules\Nobr\NobrNbspInTheEndRule;
+use zoibana\Typograph\Rules\Nobr\NobrPhoneExtRule;
+use zoibana\Typograph\Rules\Nobr\NobrPhoneRule;
+use zoibana\Typograph\Rules\Nobr\NobrShortWordsRule;
+use zoibana\Typograph\Rules\Nobr\NobrSuperNbspRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class NobrRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

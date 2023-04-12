@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Text\TextAutoLinksRule;
-use App\Helpers\Typograph\Rules\Text\TextBreaksRule;
-use App\Helpers\Typograph\Rules\Text\TextEmailRule;
-use App\Helpers\Typograph\Rules\Text\TextNoRepeatWordsRule;
-use App\Helpers\Typograph\Rules\Text\TextParagraphsRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Text\TextAutoLinksRule;
+use zoibana\Typograph\Rules\Text\TextBreaksRule;
+use zoibana\Typograph\Rules\Text\TextEmailRule;
+use zoibana\Typograph\Rules\Text\TextNoRepeatWordsRule;
+use zoibana\Typograph\Rules\Text\TextParagraphsRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class TextRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

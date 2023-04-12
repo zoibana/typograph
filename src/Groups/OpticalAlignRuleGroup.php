@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\OpticalAlign\OpticalAlignBracketsRule;
-use App\Helpers\Typograph\Rules\OpticalAlign\OpticalAlignQuoteExtraRule;
-use App\Helpers\Typograph\Rules\OpticalAlign\OpticalAlignQuotesRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\OpticalAlign\OpticalAlignBracketsRule;
+use zoibana\Typograph\Rules\OpticalAlign\OpticalAlignQuoteExtraRule;
+use zoibana\Typograph\Rules\OpticalAlign\OpticalAlignQuotesRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class OpticalAlignRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

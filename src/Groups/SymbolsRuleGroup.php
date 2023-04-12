@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Symbols\SymbolsApostropheRule;
-use App\Helpers\Typograph\Rules\Symbols\SymbolsArrowsRule;
-use App\Helpers\Typograph\Rules\Symbols\SymbolsCopySignRule;
-use App\Helpers\Typograph\Rules\Symbols\SymbolsDegreeFRule;
-use App\Helpers\Typograph\Rules\Symbols\SymbolsEuroRule;
-use App\Helpers\Typograph\Rules\Symbols\SymbolsRSignRule;
-use App\Helpers\Typograph\Rules\Symbols\SymbolsTmSignRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Symbols\SymbolsApostropheRule;
+use zoibana\Typograph\Rules\Symbols\SymbolsArrowsRule;
+use zoibana\Typograph\Rules\Symbols\SymbolsCopySignRule;
+use zoibana\Typograph\Rules\Symbols\SymbolsDegreeFRule;
+use zoibana\Typograph\Rules\Symbols\SymbolsEuroRule;
+use zoibana\Typograph\Rules\Symbols\SymbolsRSignRule;
+use zoibana\Typograph\Rules\Symbols\SymbolsTmSignRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class SymbolsRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

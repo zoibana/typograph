@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Text;
+namespace zoibana\Typograph\Rules\Text;
 
-use App\Helpers\Typograph\EntitiesHelper;
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
-use App\Helpers\Typograph\RuleInterface;
+use zoibana\Typograph\EntitiesHelper;
+use zoibana\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
 
 class TextParagraphsRule extends AbstractBaseRule implements RuleInterface
 {

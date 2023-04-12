@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Symbols;
+namespace zoibana\Typograph\Rules\Symbols;
 
-use App\Helpers\Typograph\RuleInterface;
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
+use zoibana\Typograph\Rules\AbstractBaseRule;
 
 class SymbolsApostropheRule extends AbstractBaseRule implements RuleInterface
 {

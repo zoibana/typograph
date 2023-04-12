@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Helpers\Typograph\Groups;
+namespace zoibana\Typograph\Groups;
 
-use App\Helpers\Typograph\Rules\Number\NumberFractionsRule;
-use App\Helpers\Typograph\Rules\Number\NumberMathRule;
-use App\Helpers\Typograph\Rules\Number\NumberMinusBetweenNumsRule;
-use App\Helpers\Typograph\Rules\Number\NumberNOnumberRule;
-use App\Helpers\Typograph\Rules\Number\NumberSectNumberRule;
-use App\Helpers\Typograph\Rules\Number\NumberSubRule;
-use App\Helpers\Typograph\Rules\Number\NumberSupRule;
-use App\Helpers\Typograph\Rules\Number\NumberTimesRule;
-use App\Helpers\Typograph\Rules\Number\NumberTriadsRule;
-use App\Helpers\Typograph\RuleGroupInterface;
+use zoibana\Typograph\Rules\Number\NumberFractionsRule;
+use zoibana\Typograph\Rules\Number\NumberMathRule;
+use zoibana\Typograph\Rules\Number\NumberMinusBetweenNumsRule;
+use zoibana\Typograph\Rules\Number\NumberNOnumberRule;
+use zoibana\Typograph\Rules\Number\NumberSectNumberRule;
+use zoibana\Typograph\Rules\Number\NumberSubRule;
+use zoibana\Typograph\Rules\Number\NumberSupRule;
+use zoibana\Typograph\Rules\Number\NumberTimesRule;
+use zoibana\Typograph\Rules\Number\NumberTriadsRule;
+use zoibana\Typograph\RuleGroupInterface;
 
 class NumberRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
 {

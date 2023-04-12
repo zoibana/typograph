@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Helpers\Typograph\Rules\Quotes;
+namespace zoibana\Typograph\Rules\Quotes;
 
-use App\Helpers\Typograph\EntitiesHelper;
-use App\Helpers\Typograph\Rules\AbstractBaseRule;
-use App\Helpers\Typograph\RuleInterface;
+use zoibana\Typograph\EntitiesHelper;
+use zoibana\Typograph\Rules\AbstractBaseRule;
+use zoibana\Typograph\RuleInterface;
 
 class QuotesNestedRule extends AbstractBaseRule implements RuleInterface
 {
