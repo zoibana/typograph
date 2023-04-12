@@ -1,0 +1,17 @@
+{
+    "name": "zoibana/typograph",
+    "type": "library",
+    "license": "Public-domain software",
+    "autoload": {
+        "psr-4": {
+            "zoibana\\Typograph\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zoibana",
+            "email": "zoibana@gmail.com"
+        }
+    ],
+    "require": {}
+}
