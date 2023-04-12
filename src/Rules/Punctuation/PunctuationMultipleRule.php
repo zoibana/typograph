@@ -20,7 +20,7 @@ class PunctuationMultipleRule extends AbstractBaseRule implements RuleInterface
 			$text
 		);
 		$text = preg_replace(
-			'/([a-zа-яё0-9])(!|.)(!|.|\?)(\s|$|<)/ui',
+			'/([a-zа-яё0-9])([!.])([!.?])(\s|$|<)/ui',
 			'\1\2\4',
 			$text
 		);
