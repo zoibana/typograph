@@ -16,7 +16,7 @@ class AbbrBeforeUnitRule extends AbstractBaseRule implements RuleInterface
 	{
 		$text = preg_replace(
 			'/(\s|^|>|&nbsp;|,)(\d+)( |&nbsp;)?(м|мм|см|дм|км|гм|km|dm|cm|mm)(\s|\.|!|\?|,|$|&plusmn;|;|<)/iu',
-			"\1\2&nbsp;\4\5",
+			'\1\2&nbsp;\4\5',
 			$text
 		);
 

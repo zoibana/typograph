@@ -22,6 +22,11 @@ use RuntimeException;
  */
 class Typograph
 {
+	private const PLAIN_TEXT_AMPERSAND = "\u{E000}";
+
+	/** Ссылки, почта и домены с латинским доменом верхнего уровня: их текст не типографируется. */
+	private const PLAIN_TEXT_ADDRESS = '~(?:https?://|www\.)\S+|[^\s@<>]+@[^\s@<>]+\.[a-z]{2,}|(?<![\p{L}\p{N}.@-])[a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,}(?:/\S*)?(?![\p{L}\p{N}])~iu';
+
 	private string $text = "";
 
 	/** @var \zoibana\Typograph\RuleGroupInterface[] */
@@ -210,7 +215,7 @@ class Typograph
 
 		$text = $this->decodeInternalBlocks($text);
 
-		EntitiesHelper::convert_html_entities_to_unicode($text);
+		$text = EntitiesHelper::convert_html_entities_to_unicode($text);
 
 		$text = EntitiesHelper::safeTagChars($text, false);
 
@@ -219,6 +224,35 @@ class Typograph
 		$text = str_replace(['<notg>', '</notg>'], "", $text);
 
 		return trim($text);
+	}
+
+	/**
+	 * Типографирует простой текст, а не HTML: текстовый узел документа, заголовок, подпись.
+	 *
+	 * Результат — тоже простой текст: типографские символы и неразрывные пробелы вместо
+	 * сущностей, без тегов, параграфов, автоссылок и висячей пунктуации; пробелы по краям
+	 * сохраняются, символы «<», «>», «&» остаются символами.
+	 */
+	public function applyToPlainText(string $text): string
+	{
+		if (trim($text) === '') {
+			return $text;
+		}
+
+		preg_match('/^\s*/u', $text, $leading);
+		preg_match('/\s*$/u', $text, $trailing);
+
+		$groups = array_diff(array_keys($this->traits), [TextRuleGroup::class, OpticalAlignRuleGroup::class]);
+		$typograph = new self(array_values($groups));
+
+		// apply() считает вход HTML и нормализует &amp; в &: амперсанд прячется до конца обработки.
+		$escaped = htmlspecialchars(str_replace('&', self::PLAIN_TEXT_AMPERSAND, $text), ENT_NOQUOTES | ENT_HTML5, 'UTF-8');
+		// Без группы Text адреса не превращаются в ссылки, и «пробел после точки» разорвал бы домен.
+		$escaped = preg_replace(self::PLAIN_TEXT_ADDRESS, '<notg>$0</notg>', $escaped);
+		$html = $typograph->setText($escaped)->apply();
+		$plain = html_entity_decode(strip_tags($html), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+
+		return $leading[0] . trim(str_replace(self::PLAIN_TEXT_AMPERSAND, '&', $plain)) . $trailing[0];
 	}
 
 	/**

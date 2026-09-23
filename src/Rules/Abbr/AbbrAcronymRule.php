@@ -16,7 +16,7 @@ class AbbrAcronymRule extends AbstractBaseRule implements RuleInterface
 	{
 		return preg_replace(
 			'/(\s|^|>|\()(гл|стр|рис|илл?|ст|п|с)\.([ \t])*(\d+)(&nbsp;|\s|\.|,|\?|!|$)/iu',
-			"\1\2.&nbsp;\4\5",
+			'\1\2.&nbsp;\4\5',
 			$text
 		);
 	}

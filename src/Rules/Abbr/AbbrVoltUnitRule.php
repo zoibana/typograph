@@ -16,7 +16,7 @@ class AbbrVoltUnitRule extends AbstractBaseRule implements RuleInterface
 	{
 		return preg_replace(
 			'/(\d+)([вВ]| В)(\s|\.|!|\?|,|$)/u',
-			"\1&nbsp;В\3",
+			'\1&nbsp;В\3',
 			$text
 		);
 	}

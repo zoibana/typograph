@@ -16,7 +16,7 @@ class AbbrRule extends AbstractBaseRule implements RuleInterface
 	{
 		return preg_replace(
 			'/(\s+|^|>)(\d+)([ \t])*(dpi|lpi)([\s;.?!:(]|$)/i',
-			"\1\2&nbsp;\4\5",
+			'\1\2&nbsp;\4\5',
 			$text
 		);
 	}
