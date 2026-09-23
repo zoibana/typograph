@@ -16,7 +16,7 @@ class AbbrSmImRule extends AbstractBaseRule implements RuleInterface
 	{
 		return preg_replace(
 			'/(\s|^|>|\()(см|им)\.([ \t])*([а-яё0-9a-z]+)(\s|\.|,|\?|!|$)/iu',
-			"\1\2.&nbsp;\4\5",
+			'\1\2.&nbsp;\4\5',
 			$text
 		);
 	}

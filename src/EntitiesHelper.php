@@ -11,6 +11,12 @@ class EntitiesHelper
 	public const INTERNAL_BLOCK_CLOSE = '%%%INTBLOCKC235978%%%';
 
 	/**
+	 * Коды символов разметки: их сущности не раскодируются, иначе экранированный
+	 * текст (&lt;script&gt;, &#60;b&#62;) превратился бы в настоящие теги.
+	 */
+	private const MARKUP_CODE_POINTS = [34, 38, 39, 60, 62];
+
+	/**
 	 * Таблица символов
 	 */
 	public static array $_charsTable = [
@@ -618,25 +624,30 @@ class EntitiesHelper
 	 */
 	public static function convert_html_entities_to_unicode(string $text): string
 	{
-		$text = preg_replace_callback("/&#(\d+);/",
+		$text = preg_replace_callback("/&#(\\d+);/",
 			static function ($m) {
-				return static::getUnicodeChar((int)$m[1]);
+				return static::codePointToUnicode((int)$m[1]) ?? $m[0];
 			},
 			$text);
 
-		$text = preg_replace_callback("/&#x([0-9A-F]+);/",
+		$text = preg_replace_callback("/&#x([0-9A-F]+);/i",
 			static function ($m) {
-				return static::getUnicodeChar(hexdec($m[1]));
+				return static::codePointToUnicode((int)hexdec($m[1])) ?? $m[0];
 			}
 			, $text);
 
 		return preg_replace_callback("/&([a-zA-Z0-9]+);/",
 			static function ($m) {
-				$r = static::html_char_entity_to_unicode($m[1]);
+				$codePoint = self::$html4_char_ents[$m[1]] ?? null;
 
-				return $r ?: $m[0];
+				return $codePoint === null ? $m[0] : (static::codePointToUnicode($codePoint) ?? $m[0]);
 			}
 			, $text);
+	}
+
+	private static function codePointToUnicode(int $codePoint): ?string
+	{
+		return in_array($codePoint, self::MARKUP_CODE_POINTS, true) ? null : static::getUnicodeChar($codePoint);
 	}
 
 	public static function rstrpos($haystack, $needle, $offset = 0)

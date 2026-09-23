@@ -10,7 +10,6 @@ use zoibana\Typograph\Rules\Punctuation\PunctuationFixExclMarkRule;
 use zoibana\Typograph\Rules\Punctuation\PunctuationHellipRule;
 use zoibana\Typograph\Rules\Punctuation\PunctuationMarksLimitRule;
 use zoibana\Typograph\Rules\Punctuation\PunctuationMultipleRule;
-use zoibana\Typograph\Rules\Punctuation\PunctuationPeriodAtEndRule;
 use zoibana\Typograph\RuleGroupInterface;
 
 class PunctuationRuleGroup extends AbstractRuleGroup implements RuleGroupInterface
@@ -31,7 +30,6 @@ class PunctuationRuleGroup extends AbstractRuleGroup implements RuleGroupInterfa
 			PunctuationMultipleRule::class,
 			PunctuationBracketsRule::class,
 			PunctuationBracketsSpaceRule::class,
-			PunctuationPeriodAtEndRule::class,
 		];
 	}
 }

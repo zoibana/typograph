@@ -16,7 +16,7 @@ class AbbrBeforeWeightUnitRule extends AbstractBaseRule implements RuleInterface
 	{
 		return preg_replace(
 			'/(\s|^|>|&nbsp;|,)(\d+)( |&nbsp;)?(г|кг|мг|т)(\s|\.|!|\?|,|$|&nbsp;|;)/iu',
-			"\1\2&nbsp;\4\5",
+			'\1\2&nbsp;\4\5',
 			$text
 		);
 	}

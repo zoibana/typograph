@@ -16,7 +16,7 @@ class NobrCelciusRule extends AbstractBaseRule implements RuleInterface
 	{
 		return preg_replace(
 			'/(\s|^|>|&nbsp;)(\d+)( |&nbsp;)?(°|&deg;)([CС])(\s|\.|!|\?|,|$|&nbsp;|;)/iu',
-			"\1\2&nbsp;\4C\6",
+			'\1\2&nbsp;\4C\6',
 			$text
 		);
 	}
